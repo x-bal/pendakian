@@ -37,8 +37,8 @@
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label for="ket_singkat">Ket Singkat</label>
-                                            <input type="text" name="ket_singkat" id="kategori" class="form-control" value="Jawa Timur" autocomplete="off" readonly>
+                                            <label for="ket_singkat">Keterangan Singkat</label>
+                                            <textarea name="ket_singkat" id="ket_singkat" required class="form-control" placeholder="Tuliskan Keterangan Singkat" rows="10"></textarea>
                                         </div>
                                     </div>
                                     <div class="col-md-6">

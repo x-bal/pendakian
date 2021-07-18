@@ -8,7 +8,7 @@
             ?>
                 <div class="col-lg-4 col-md-4 col-sm-6">
                     <div class="h_gallery_item">
-                        <a href="detail-konten?id=<?= $pr['id_perlengkapan'] ?>&val=wisata" target="_blank">
+                        <a href="<?= base_url('home/d_perlengkapan/' . $pr['id_perlengkapan']); ?>">
                             <div class="g_img_item">
                                 <img src="<?= base_url('asset/images/gunung/' . $pr['gambar']) ?>" width="230">
                             </div>

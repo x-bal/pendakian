@@ -85,6 +85,15 @@ class Home extends CI_Controller
         $this->load->view('home/detail_perlengkapan', $data);
         $this->load->view('core/footer');
     }
+
+    public function d_rute($id)
+    {
+        $data['detail'] = $this->db->get_where('tb_rute', ['id_rute' => $id])->row_array();
+
+        $this->load->view('core/header');
+        $this->load->view('home/detail_rute', $data);
+        $this->load->view('core/footer');
+    }
 }
 
 /* End of file Index.php */

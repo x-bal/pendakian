@@ -6,21 +6,18 @@
             <?php
             foreach ($wisata as $wis) :
             ?>
-                <div class="col-lg-4 col-md-4 col-sm-6">
-                    <div class="h_gallery_item">
+                <a href="<?= base_url('home/d_wisata/' . $wis['id_wisata']); ?>">
+                    <div class="col-lg-4 col-md-4 col-sm-6">
+                        <div class="h_gallery_item">
                             <div class="g_img_item">
-                                    <img src="<?= base_url('asset/images/gunung/' . $wis['gambar']) ?>" width="230">
-                                </a>
+                                <img src="<?= base_url('asset/images/gunung/' . $wis['gambar']) ?>" width="230">
                             </div>
-                        </a>
-                        <div class="g_item_text">
-                            <a href="<?= base_url('home/d_wisata/' . $wis['id_wisata']); ?>">
+                            <div class="g_item_text">
                                 <h4><?= $wis['nama_wisata']; ?></h4>
-                            </a>
-
+                            </div>
                         </div>
                     </div>
-                </div>
+                </a>
             <?php endforeach; ?>
         </div>
     </div>
